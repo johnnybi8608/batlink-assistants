@@ -1,0 +1,66 @@
+{
+  "nodeBaseUrl": "https://node-a8f3c1.batlink.org",
+  "owner": {
+    "address": "0xYOUR_BATLINK_ADDRESS",
+    "name": "主人",
+    "callName": "",
+    "pronoun": "TA",
+    "timezone": ""
+  },
+  "dataDir": "./data",
+  "httpPort": 8790,
+  "logLevel": "info",
+  "agents": [
+    {
+      "id": "lingxi",
+      "name": "灵犀",
+      "aliases": [
+        "灵犀"
+      ],
+      "avatar": "avatar_girls_011",
+      "hello": "嗨~ 我是灵犀,你的私人助理。聊天、查东西、记事、提醒,私聊我就行 😜 想给我换名字、性格或称呼,跟帮你部署的 AI 说一声,或者改 config.json 就行。"
+    },
+    {
+      "id": "zhaoxiaoliu",
+      "name": "赵小六",
+      "aliases": [
+        "赵小六",
+        "小六"
+      ],
+      "avatar": "avatar_boys_005",
+      "projectEngine": "claude",
+      "hello": "你好,我是赵小六,你的工作助理。私聊我办事;把我拉进项目群并运行 connectproject,在群里 @我 就能处理那个项目。默认只读,需要我动手改东西时,在 config.json 里打开 fullAccess。 想给我换名字、性格或称呼,跟帮你部署的 AI 说一声,或者改 config.json 就行。"
+    },
+    {
+      "id": "wangcai",
+      "name": "旺财",
+      "aliases": [
+        "旺财"
+      ],
+      "avatar": "avatar_animals_010",
+      "mailCommands": true,
+      "hello": "汪!我是旺财,你的邮箱助理。新邮件我会一封一条推给你(外文附译文);要回信就引用那条推送告诉我怎么回,草稿确认后回复「发送」才会发出。 想给我换名字、性格或称呼,跟帮你部署的 AI 说一声,或者改 config.json 就行。"
+    },
+    {
+      "id": "qingyue",
+      "name": "清越",
+      "aliases": [
+        "清越"
+      ],
+      "avatar": "avatar_girls_018",
+      "wakeOnImage": true,
+      "hello": "你好,我是清越,你的私人翻译。发文字、图片、语音给我,我直接翻译。换语言发:@语言 中文 英语(第一个是你的主要语言)。 想给我换名字、性格或称呼,跟帮你部署的 AI 说一声,或者改 config.json 就行。"
+    }
+  ],
+  "projectAgents": [
+    "zhaoxiaoliu"
+  ],
+  "wakers": [],
+  "voice": {},
+  "translator": {
+    "baseUrl": "https://api.x.ai/v1",
+    "model": "grok-4.20-0309-non-reasoning",
+    "secret": "xai"
+  },
+  "mail": null
+}

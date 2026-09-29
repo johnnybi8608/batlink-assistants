@@ -1,0 +1,29 @@
+{
+  "name": "batlink-assistants",
+  "version": "0.1.0",
+  "description": "Personal AI assistants for Batlink, the decentralized end-to-end encrypted messenger: a companion assistant, a work assistant, a mail assistant and a translator — running on your own Mac.",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "os": ["darwin"],
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "setup": "node bin/setup.js",
+    "start": "node src/daemon.js",
+    "waker": "node bin/waker.js",
+    "status": "node bin/status.js",
+    "install-service": "node bin/install-service.js",
+    "uninstall-service": "node bin/install-service.js --remove",
+    "secret": "node bin/secret.js",
+    "memdb": "node bin/memdb.js",
+    "mail:auth": "node bin/mail-auth.js",
+    "mail:setup": "node bin/setup-mail-assistant.js",
+    "connect": "node bin/connectproject.js"
+  },
+  "dependencies": {
+    "@noble/ciphers": "^1.3.0",
+    "@noble/curves": "^1.9.7",
+    "@noble/hashes": "^1.8.0",
+    "ws": "^8.21.3"
+  }
+}

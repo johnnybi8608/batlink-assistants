@@ -1,0 +1,8 @@
+# Your own settings, keys and data never go into git
+config.json
+config.json.tmp
+.env
+data/
+node_modules/
+.DS_Store
+*.log
